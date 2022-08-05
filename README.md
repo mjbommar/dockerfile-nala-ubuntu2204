@@ -22,3 +22,6 @@ https://gitlab.com/volian/nala
 
 ## License
 MIT
+
+# Author
+* [Michael Bommarito](https://www.linkedin.com/in/bommarito)
