@@ -1,8 +1,11 @@
 # © Michael Bommarito, 2022
 # SPDX: MIT
-# NB: This is a demo Dockerfile for Ubuntu 22.04 that includes basic setup for the nala "wrapper" around libapt, which
+# This is a demo Dockerfile for Ubuntu 22.04 that includes basic setup for the nala "wrapper" around libapt, which
 # can substantially speed up build processes involving large numbers of apt/deb package installs.
-# Combine with a local mirror or apt proxy cache for maximum impact.
+# N.B.: There's an overhead to installing nala.  If you only have a few packages, you may not get much benefit.
+# If you maintain your own "base" image for ubuntu, bake it in there for maximum downstream impact across your
+# images and combine with a local mirror or apt proxy cache.
+# P.S.: You won't see the pretty nala output unless you have buildkit enabled (e.g., DOCKER_BUILDKIT=1 ...)
 # To learn more about nala, see https://gitlab.com/volian/nala.
 
 # base
